@@ -1,0 +1,215 @@
+.dashboard_container {
+  margin: 0 auto;
+  max-width: 1445px;
+  width: 100%;
+  height: 100vh;
+}
+input[type="text"]::placeholder {
+  color: rgba(6, 7, 14, 0.25);
+}
+section {
+  background: #f2f5ea;
+}
+nav {
+  background: white;
+}
+.notification-count {
+  font-size: 8px;
+  height: 13px;
+  width: 13px;
+  background: #690fad;
+  top: 2px;
+  right: 4px;
+}
+.sectionContent {
+  min-height: calc(100vh - 60px);
+}
+.search {
+  background: #fffffa;
+  border: 1px solid rgba(6, 7, 14, 0.25);
+  border-radius: 40px;
+}
+aside {
+  font-family: "Work Sans", sans-serif;
+  background: #690fad;
+  border-radius: 0 6px 0 0;
+  width: 21%;
+}
+.aside-list a:hover {
+  background: linear-gradient(
+    89.25deg,
+    #7812c6 15.18%,
+    rgba(93, 13, 153, 0.65) 100%
+  );
+}
+.sec1 {
+  width: 81%;
+}
+.graph {
+  height: 372px;
+}
+.sec1-1 {
+  width: 60%;
+}
+.sec1-2 {
+  width: 40%;
+}
+.date {
+  background: #caa8f5;
+  color: #690fad;
+}
+.navActive {
+  background: linear-gradient(
+    180deg,
+    #7812c6 15.11%,
+    rgba(93, 13, 153, 0.65) 100%
+  );
+}
+table {
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.1);
+}
+thead,
+tbody {
+  display: block;
+}
+thead th,
+tbody td {
+  width: 754px;
+}
+.tbody,
+.user-info {
+  overflow-y: scroll;
+  height: 300px;
+}
+.user-info {
+  height: 230px;
+}
+.tbody tr:nth-child(even) {
+  background: rgba(239, 229, 249, 0.45);
+}
+.user-info ul li:nth-child(even) {
+  background: rgba(239, 229, 249, 0.45);
+}
+.activeText {
+  color: #690fad;
+}
+.acceptedText {
+  color: #caa8f5;
+}
+.inviteText {
+  color: rgba(6, 7, 14, 0.25);
+}
+.navImg {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/*tooltip*/
+.tooltip .tooltipText {
+  padding: 5px 0;
+  z-index: 1;
+  left: 50%;
+  margin-left: -15px;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+}
+
+/*Group page data*/
+.group-button{
+  background-color: #690fad;
+  color: white;
+}
+.shadow{
+  background: rgba(239, 229, 249, 0.45);
+}
+
+/*BreadCrumb Css Group Edit page*/
+.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+.breadcrumb li a {
+  text-decoration: none;
+}
+.card-shadow{
+  background: #EFE5F973;
+}
+
+
+/*New add for javascript*/
+.dateDefault{
+  display: inline;
+}
+.aside_width{
+  width: 6%;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+.board{
+  display: none;
+}
+.second1{
+  width: 92%;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+.date1{
+  display: block;
+}
+.board_rotate{
+  transform: rotate(180deg);
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+
+/*modal css*/
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top:0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.search-bar{
+  position: absolute;
+  top: 23%;
+  right: 13%;
+}
+.search-bar-hide{
+  position: absolute;
+  top: 23%;
+  right: 20%;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamification Screen Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <div class="dashboard_container mx-auto">
+      <section class="w-full">
+        <nav class="flex justify-between items-center py-2 px-8">
+          <div>
+            <img src="assets/images/navbar/logo.svg" alt="logo" />
+          </div>
+          <div class="flex justify-evenly items-center w-2/5 text-xs">
+            <div class="search flex h-9 w-8/12">
+              <input
+                class="input mx-4 outline-0 border-0 w-5/6"
+                type="text"
+                placeholder="Search . . . "
+              />
+              <img
+                src="assets/images/navbar/search.svg"
+                alt="logo"
+                width="17"
+              />
+            </div>
+            <div class="navImg flex items-center justify-center relative">
+              <img src="assets/images/navbar/bell.svg" alt="bell" />
+              <span
+                class="notification-count flex items-center justify-center font-medium text-white rounded-full absolute"
+                >88</span
+              >
+            </div>
+            <img
+              class="w-10 h-10 rounded-full"
+              src="./assets/images/user/user1.svg"
+              alt="user"
+            />
+          </div>
+        </nav>
+        <div class="sectionContent flex w-full">
+          <aside
+            class="py-10 text-base font-medium flex flex-col justify-between"
+          >
+            <div>
+              <div class="date mt-2 text-center">
+                21 june <span class="dateDefault"> 2022</span>
+              </div>
+              <div
+                class="aside-list text-white mt-8 flex flex-col justify-between"
+              >
+                <ul>
+                  <li>
+                    <a
+                      class="flex items-center pl-6 py-2 my-3"
+                      href="index.html"
+                    >
+                      <img
+                        src="assets/images/aside/dashboard.svg"
+                        alt="dashboard"
+                      />
+                      <span class="state mx-3">Dashboard</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center pl-6 py-2 my-2"
+                      href="Groups.html"
+                    >
+                      <img src="assets/images/aside/user.svg" alt="user" />
+                      <span class="state mx-3">Groups</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center pl-6 py-2 my-2"
+                      href="Gamification-screen.html"
+                    >
+                      <img src="assets/images/aside/check.svg" alt="check" />
+                      <span class="state mx-3">Gamification</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center pl-6 py-2 my-2"
+                      href="Package-screen.html"
+                    >
+                      <img src="assets/images/aside/dollar.svg" alt="dollar" />
+                      <span class="state mx-3">Package Creation</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center pl-6 py-2 my-2"
+                      href="Activity-screen.html"
+                    >
+                      <img src="assets/images/aside/clock.svg" alt="clock" />
+                      <span class="state mx-3">Activity Scheduling</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center pl-6 py-2 my-2"
+                      href="Attend-screen.html"
+                    >
+                      <img
+                        src="assets/images/aside/Group 1.svg"
+                        alt="management"
+                      />
+                      <span class="state mx-3 w-96">Attendance Management</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="flex items-center navActive pl-6 py-2 my-2"
+                      href="Reports.html"
+                    >
+                      <img
+                        src="assets/images/aside/Layer 1.svg"
+                        alt="reports"
+                      />
+                      <span class="state mx-3">Reports</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="pl-6">
+              <a class="flex items-center">
+                <img
+                  src="assets/images/aside/help.svg"
+                  class="hide_img"
+                  width="25"
+                  alt="Help"
+                  onclick="smallWidth()"
+                />
+                <span class="state mx-4 text-white">Hide</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+    <script>
+      function smallWidth() {
+        let elementAside = document.getElementsByTagName("aside")[0];
+        elementAside.classList.toggle("aside_width");
+        let elementState = document.getElementsByClassName("state");
+        for (let i = elementState.length; i--; ) {
+          elementState[i].classList.toggle("board");
+        }
+        let elementDate = document.getElementsByClassName("dateDefault")[0];
+        elementDate.classList.toggle("board");
+        let elementImage = document.getElementsByClassName("hide_img")[0];
+        elementImage.classList.toggle("board_rotate");
+
+        let elementWidth = document.getElementsByClassName("sec1")[0];
+        elementWidth.classList.toggle("second1");
+      }
+    </script>
+  </body>
+</html>
