@@ -159,7 +159,7 @@ tbody td {
   display: inline;
 }
 .aside_width{
-  width: 6%;
+  width: 5%;
   transition: all 0.5s linear;
   -webkit-transition: all 0.5s linear;
 }
@@ -211,5 +211,51 @@ tbody td {
 .search-bar-hide{
   position: absolute;
   top: 23%;
-  right: 20%;
+  right: 18%;
 }
+
+@media (max-width: 768px){
+  .nav{
+    width: 70% !important;
+  }
+  .search img{
+    margin-right: 10px;
+  }
+  .aside-list img{
+    width:18px
+  }
+  .aside-list .state{
+    font-size: 14px;
+  }
+  .sec1-2{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-left: 30px;
+  }
+  .invite{
+    font-size: 10px;
+  }
+  .aside_width {
+    width: 9%;
+  }
+  .user-info{
+    overflow-y:hidden;
+    height: 460px;
+  }
+  .expand{
+    width: 20%;
+  }
+
+}
+
+/*@media (orientation:landscape){*/
+/*  section{*/
+/*    background: red;*/
+/*  }*/
+/*}*/
+/*@media (orientation:portrait){*/
+/*  section{*/
+/*    background: green;*/
+/*  }*/
+/*}*/
